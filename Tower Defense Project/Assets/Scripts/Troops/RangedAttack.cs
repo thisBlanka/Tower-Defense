@@ -8,10 +8,12 @@ public class RangedAttack : MonoBehaviour
     public TroopMovement move;
     public Collider2D coll;
     private float cooldown;
+    [SerializeField] float cooldownTime;
     private bool inRoute;
     Animator anim;
     private List<GameObject> targets;
     private TroopLife life;
+    private Collider2D mainTower;
     [SerializeField] private AudioSource arrow;
 
     [SerializeField] private Projectile projectile;
@@ -20,6 +22,7 @@ public class RangedAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mainTower = GameObject.FindGameObjectWithTag("EnemyTower").GetComponent<Collider2D>();
         life = GetComponent<TroopLife>();
         targets = new List<GameObject>();
         anim = GetComponent<Animator>();
@@ -32,7 +35,11 @@ public class RangedAttack : MonoBehaviour
     {
         if (!life.getIsDead())
         {
-            if (targets.Count > 0)
+            if (this.coll.IsTouching(mainTower))
+            {
+                move.setMoveEnable(false);
+            }
+            else if (targets.Count > 0)
             {
                 inRoute = false; ;
                 move.setMoveEnable(false);
@@ -41,7 +48,7 @@ public class RangedAttack : MonoBehaviour
                     arrow.Play();
                     projectile.Create(transform.position, targets[0].transform.position, targets[0]);
                     cooldown = 2f;
-                    cooldown = 0.5f;
+                    cooldown = cooldownTime;
 
                     if (move.route_case == 0)
                     {

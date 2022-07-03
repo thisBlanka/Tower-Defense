@@ -99,4 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectiles: {fileID: 8989073531363965740}
   fix: 90
-  damage: 1
+  damage: 2

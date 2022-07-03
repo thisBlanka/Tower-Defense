@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class TroopLife : MonoBehaviour
 {
+
     public int life, prevLife, lifeCondition;
 
     public Material flash;
+
     private Material original;
 
     public float flashDuration;
@@ -18,8 +20,18 @@ public class TroopLife : MonoBehaviour
     private Color color, originalColor;
 
     private Collider2D coll;
-    bool isDead;
+
+    private bool isDead;
+
     private Animator animator;
+
+    [SerializeField]
+    private GameObject bloodSplash;
+    [SerializeField]
+    private GameObject bloodPermanent;
+
+    [SerializeField]
+    private AudioSource bloodSound;
 
     // Start is called before the first frame update
     void Start()
@@ -41,12 +53,12 @@ public class TroopLife : MonoBehaviour
     {
         if (prevLife > life)
         {
-            prevLife = life;
             Flash();
-            color.r = color.r - .07f;
-            color.g = color.g - .07f;
-            color.b = color.b - .07f;
+            color.r = color.r - .07f * (prevLife - life);
+            color.g = color.g - .07f * (prevLife - life);
+            color.b = color.b - .07f * (prevLife - life);
             original.color = color;
+            prevLife = life;
         }
 
         if (life <= 0)
@@ -58,6 +70,9 @@ public class TroopLife : MonoBehaviour
                 isDead = true;
                 coll.enabled = false;
                 animator.SetTrigger("Death");
+                Instantiate(bloodSplash, this.transform);
+                Instantiate(bloodPermanent, this.transform);
+                bloodSound.Play();
             }
         }
     }

@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectiles: {fileID: 1389089781826384932}
   fix: 0
-  damage: 4
+  damage: 5
 --- !u!95 &2286769196961452369
 Animator:
   serializedVersion: 4

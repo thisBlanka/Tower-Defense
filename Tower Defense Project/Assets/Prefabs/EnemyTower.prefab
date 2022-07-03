@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1332031322460075407}
   - component: {fileID: 9131531625321889274}
   - component: {fileID: 2499679024221613209}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 1332031322640184537}
   - component: {fileID: 1332031322640184539}
   - component: {fileID: 1332031322640184538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Energy_Animation_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 3987127255672064997}
   m_Layer: 3
   m_Name: EnemyTower
-  m_TagString: MainTower
+  m_TagString: EnemyTower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,4 +382,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7

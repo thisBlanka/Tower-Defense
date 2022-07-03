@@ -21,7 +21,15 @@ public class EnemyLife : MonoBehaviour
     private Animator animator;
 
     private bool isDead;
-    private Collider2D coll;   
+    private Collider2D coll;
+
+    [SerializeField]
+    private GameObject bloodSplash;
+    [SerializeField]
+    private GameObject bloodPermanent;
+
+    [SerializeField]
+    private AudioSource bloodSound;
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +51,12 @@ public class EnemyLife : MonoBehaviour
     {
         if (prevLife > life)
         {
-            prevLife = life;
             Flash();
-            color.r = color.r - .07f;
-            color.g = color.g - .07f;
-            color.b = color.b - .07f;
+            color.r = color.r - .07f * (prevLife - life);
+            color.g = color.g - .07f * (prevLife - life);
+            color.b = color.b - .07f * (prevLife - life);
             original.color = color;
+            prevLife = life;
         }
         if (life <= 0)
         {
@@ -56,11 +64,13 @@ public class EnemyLife : MonoBehaviour
             original.color = color;
             if (!isDead)
             {
+                Instantiate(bloodSplash, this.transform);
+                Instantiate(bloodPermanent, this.transform);
+                bloodSound.Play();
                 isDead = true;
                 coll.enabled = false;
                 animator.SetTrigger("Death");
             }
-            
         }
     }
 

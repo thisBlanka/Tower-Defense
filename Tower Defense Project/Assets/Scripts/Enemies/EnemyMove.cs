@@ -85,24 +85,28 @@ public class EnemyMove : MonoBehaviour
 
                     if (route_case == 0)
                     {
+                        transform.localScale = new Vector3(1, 1, 1);
                         anim.SetTrigger("Forward");
                         speedHorizontal = speed;
                         speedVertical = 0;
                     }
                     else if (route_case == 1)
                     {
-                        anim.SetTrigger("BackWards");
+                        transform.localScale = new Vector3(-1, 1, 1);
+                        anim.SetTrigger("Forward");
                         speedHorizontal = -speed;
                         speedVertical = 0;
                     }
                     else if (route_case == 2)
                     {
+                        transform.localScale = new Vector3(1, 1, 1);
                         anim.SetTrigger("Up");
                         speedHorizontal = 0;
                         speedVertical = +speed;
                     }
                     else if (route_case == 3)
                     {
+                        transform.localScale = new Vector3(1, 1, 1);
                         anim.SetTrigger("Down");
                         speedHorizontal = 0;
                         speedVertical = -speed;

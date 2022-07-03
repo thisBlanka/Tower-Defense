@@ -50,17 +50,21 @@ public class EnemyAttack : MonoBehaviour
                     if (move.getSpeedHorizontal() > 0)
                     {
                         anim.SetTrigger("AttackForward");
+                        transform.localScale = new Vector3(1, 1, 1);
                     }
                     else if (move.getSpeedHorizontal() < 0)
                     {
-                        anim.SetTrigger("AttackBackWards");
+                        anim.SetTrigger("AttackForward");
+                        transform.localScale = new Vector3(-1, 1, 1);
                     }
                     else if (move.getSpeedVertical() > 0)
                     {
+                        transform.localScale = new Vector3(1, 1, 1);
                         anim.SetTrigger("AttackUP");
                     }
                     else if (move.getSpeedVertical() < 0)
                     {
+                        transform.localScale = new Vector3(1, 1, 1);
                         anim.SetTrigger("AttackDown");
                     }
                 }
@@ -78,18 +82,22 @@ public class EnemyAttack : MonoBehaviour
                     inRoute = true;
                     if (move.getSpeedHorizontal() > 0)
                     {
+                        transform.localScale = new Vector3(1, 1, 1);
                         anim.SetTrigger("Forward");
                     }
                     else if (move.getSpeedHorizontal() < 0)
                     {
-                        anim.SetTrigger("BackWards");
+                        transform.localScale = new Vector3(-1, 1, 1);
+                        anim.SetTrigger("Forward");
                     }
                     else if (move.getSpeedVertical() > 0)
                     {
+                        transform.localScale = new Vector3(-1, 1, 1);
                         anim.SetTrigger("Up");
                     }
                     else if (move.getSpeedVertical() < 0)
                     {
+                        transform.localScale = new Vector3(-1, 1, 1);
                         anim.SetTrigger("Down");
                     }
                 }

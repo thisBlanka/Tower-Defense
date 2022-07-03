@@ -1,0 +1,1112 @@
+fileFormatVersion: 2
+guid: 59aa9ede42b2e6d4a969a8538386fab7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bloodRender_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e4f3a980e965a469897bf3cd6b6d34
+      internalID: -1170822092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40b790b3850c594799b179da3a63ecd
+      internalID: 660341835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c7b2083f4933a44a2b587523a3cab2
+      internalID: 448245110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c23ab56f2e28440be7556e1061194c
+      internalID: 532980860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12886a735eaa8a2408389a74fa6a8dfc
+      internalID: -1035939289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a105b1f441e126b46b2b11719a566774
+      internalID: 932412273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_6
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110247c12fc94e642815757d608534bb
+      internalID: 1328300267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_7
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fc633739cd0b3429dd0b959da032c4
+      internalID: -151632047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_8
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96b4aee66e29864a80e5af5e3e946fa
+      internalID: -1972102783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ee489bd82c45941923b42b843ef9c0
+      internalID: -1725918979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2256b4af671ad1d4f83b1d82f10e555e
+      internalID: -2062885336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac856ce47fe7d54da6858ec39a5e8a2
+      internalID: -1283896315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe92ea23ce37f8418458051c1010852
+      internalID: 191092479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_13
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0eab9892d6660042955f8c8e729a086
+      internalID: -1801284911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab8804bb34706343b0489acc2bc449b
+      internalID: -2095232554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d72c3988a79c54c9aad2e21f953e13
+      internalID: 633748242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_16
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de27467a57426224eb8b10d7647ec83a
+      internalID: 2071243916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a5c7e9122e0b24595ad8b07310d0e0
+      internalID: 1252406033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd34902a25dc28540a82e396e602b2ec
+      internalID: -556098720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_19
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9293787d08c04d34ea98e85c28854616
+      internalID: -883632591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_20
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121e0bcd391c48b41b8c20b78acef874
+      internalID: 2134846979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62962cf08b04fdb459f5a234dda8c728
+      internalID: -563630318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_22
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f59e32b1e01d54792d2979524aa835
+      internalID: -169311623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5107955aa3c3b42852d8b574d5e773
+      internalID: 1650035646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_24
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bd380155999c94eb7b0a59e26f4100
+      internalID: 1677124002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_25
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6f8eccc543e7a4ea7a1322486a2d55
+      internalID: 792942897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_26
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f556cd514901b85438dbab4e70ff3298
+      internalID: 2089691455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35248a4490f2ece41b573d8042cc275b
+      internalID: -797126257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_28
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795e0515a7272924da565e8a93327794
+      internalID: 105268809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_29
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18803fcf1937194bac53c6a5cc1b878
+      internalID: -784940914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_30
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f10541da7e7aa040924d7cbf4d61707
+      internalID: 50785327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_31
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52205080e5cc19a48b226c5afd767b1a
+      internalID: -479229744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_32
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bfc989c69fbc84682bc8db0f608f1e
+      internalID: -1613761833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_33
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97834ca434f9ad842af8d75cf85333ea
+      internalID: -1429544941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_34
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd1bf63cc5799b47b1fbbc175e9743b
+      internalID: 597447182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_35
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ee451073a97c1419427e0f48a3dadc
+      internalID: 368997057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc97198490c0a748807a1d114e636db
+      internalID: -650334304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_37
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301db525c2f1c154b8fc1a2e5335a767
+      internalID: 904774401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_38
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505caa4257e385f47b1edf6aa848dd6d
+      internalID: -1948351619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_39
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafee33ae55963a43a3daf41491b42cb
+      internalID: -731206660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_40
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a7ca9f6efd0774493679b024b8e00e
+      internalID: 1078987158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_41
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 120
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1c7b54cd2cc3e49997c7082910f452
+      internalID: 19353424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1da9f8622d6f3449b5e6e1d1383eae7
+      internalID: -1979713199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_43
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 60
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4213d1adb177e498e075ae51777832
+      internalID: 1222954337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodRender_44
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 60
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92172db1de3f204bae2768377dd68e0
+      internalID: -1909508099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bloodRender_4: -1035939289
+      bloodRender_9: -1725918979
+      bloodRender_43: 1222954337
+      bloodRender_40: 1078987158
+      bloodRender_20: 2134846979
+      bloodRender_18: -556098720
+      bloodRender_10: -2062885336
+      bloodRender_21: -563630318
+      bloodRender_1: 660341835
+      bloodRender_42: -1979713199
+      bloodRender_35: 368997057
+      bloodRender_25: 792942897
+      bloodRender_34: 597447182
+      bloodRender_12: 191092479
+      bloodRender_23: 1650035646
+      bloodRender_44: -1909508099
+      bloodRender_32: -1613761833
+      bloodRender_26: 2089691455
+      bloodRender_8: -1972102783
+      bloodRender_0: -1170822092
+      bloodRender_3: 532980860
+      bloodRender_5: 932412273
+      bloodRender_14: -2095232554
+      bloodRender_29: -784940914
+      bloodRender_31: -479229744
+      bloodRender_19: -883632591
+      bloodRender_6: 1328300267
+      bloodRender_37: 904774401
+      bloodRender_17: 1252406033
+      bloodRender_28: 105268809
+      bloodRender_27: -797126257
+      bloodRender_39: -731206660
+      bloodRender_41: 19353424
+      bloodRender_30: 50785327
+      bloodRender_7: -151632047
+      bloodRender_38: -1948351619
+      bloodRender_33: -1429544941
+      bloodRender_36: -650334304
+      bloodRender_2: 448245110
+      bloodRender_13: -1801284911
+      bloodRender_22: -169311623
+      bloodRender_15: 633748242
+      bloodRender_16: 2071243916
+      bloodRender_24: 1677124002
+      bloodRender_11: -1283896315
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

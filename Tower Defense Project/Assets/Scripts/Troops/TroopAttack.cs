@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TroopAttack : MonoBehaviour
 {
-    private EnemyFront inFront;
     public TroopMovement move;
     private Collider2D coll;
     private float cooldown;
@@ -20,7 +19,7 @@ public class TroopAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainTower = GameObject.Find("EnemyTower").GetComponent<Collider2D>();
+        mainTower = GameObject.FindGameObjectWithTag("EnemyTower").GetComponent<Collider2D>();
         life = GetComponent<TroopLife>();
         coll = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();

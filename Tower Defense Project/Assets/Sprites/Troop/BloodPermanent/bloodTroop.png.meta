@@ -1,0 +1,1112 @@
+fileFormatVersion: 2
+guid: a1395de7d86e54f4e84b8c94411dabbb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bloodTroop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d4dad39e572d479b5888290b92fec
+      internalID: 1645694060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdc6d4da16bace4099be3263994061a
+      internalID: -62325224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0424c0384a2933f4586e64bdb2962432
+      internalID: 332021110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf47b85d2a3565c4d94e6b1a1dd9f3be
+      internalID: 141783877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90379be33f692fe4bac3b918d92d903d
+      internalID: -723692356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7bb481b1bb64d40a96173586e2d6ad
+      internalID: -1483855633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_6
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2f1961e47053d4a96acbd120143dc3
+      internalID: 2058928910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_7
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162bd46df1ca6e847931b28fb344a0d7
+      internalID: -1114462462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_8
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 520
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46696a266bfa7a242b2c079205cd9fe3
+      internalID: 328936888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e837fd5b1d695f94eacee0fa865cc4a9
+      internalID: 1512362873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6137e8579e11f774ab9f29aa10caa7dd
+      internalID: 2093913212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eef6074dfbfc246a2e3f56ce229b65
+      internalID: 396082570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a62888ee4bf85488d6e6d4aa84632c
+      internalID: -677186075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_13
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d431d8eccc51a3e4f9e0b3575623bcfe
+      internalID: -1913978621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5deef4ac5ba9bd468e8d6b7493f1646
+      internalID: 160874489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f499b29246a7e94c9c585b037c48549
+      internalID: -1227720742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_16
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850d6f7888bc41148bb7aa8f0a333cb5
+      internalID: -728149688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 460
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c71add1ea4993640b154de8d5fe65d6
+      internalID: 1647419661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbfea2971b185e4a8a2ee76d6dbab65
+      internalID: 1112754931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_19
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93b58a209aed0a41afd62d2d76800bd
+      internalID: 1278904903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_20
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d842b39f29ff9408dd7a9ab9998823
+      internalID: -2145585537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2594597c4a8a7f419a5b73064dd5e33
+      internalID: -371210536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_22
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadbf1cc40130ca4a8a08863c49c6e65
+      internalID: -1286771496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2309be5be1f3ef7469ba97b8acdba041
+      internalID: 1965195808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_24
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ca64da58cc5874da00d447166e8709
+      internalID: 737932483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_25
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de764074f69acc46a7ff4ffd6166358
+      internalID: 635751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_26
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 400
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb777c3a32f0ad4eb688dc585eb48d9
+      internalID: -1907579381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade88c96471c05f4ebd0a25571afa2c8
+      internalID: 1150017351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_28
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c3cbad6b85f6a45a2f8b0f0eacc81f
+      internalID: -1640025381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_29
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d4d7b42976fd54e8e87ed81840dd03
+      internalID: -321292729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_30
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd40c17ca8460ed4b895382a0c049646
+      internalID: 1139723922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_31
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d13ab25e8f96f43a51b867b803701a
+      internalID: 1502653315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_32
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925fea2e022409b4899e43317284c706
+      internalID: 1278740146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_33
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4d1447d4da2434cac0b0f4a4e41697
+      internalID: 1190125369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_34
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d24bbbf1926e534796e4e18bf568900
+      internalID: 1547053173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_35
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 340
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659ae3fa067061543b473dd6f35583a4
+      internalID: -1661770450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c54862209cb4e439b23dfdf08a5990
+      internalID: -315230268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_37
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a6c2c262dea4046be5c66a45473225
+      internalID: -1887200386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_38
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dfed1dfdf95b24b92ff668a5936853
+      internalID: -1862788165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_39
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f534c00fb2b77e1499c822ef9c8f2d0a
+      internalID: 1463316420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_40
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 280
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a682f8aee389ea46855cf84067ddddf
+      internalID: -1903989190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_41
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 120
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d5afee926e134abeaf0ea891c93fe
+      internalID: -1984819186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d05ecb31bb70d4588ee211a1376ef7
+      internalID: -46982155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_43
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 60
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701388c1e5c0ead4baf4d73413c60bf3
+      internalID: 190429395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodTroop_44
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 60
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85477860a299a6b49a3a3c0029aeb245
+      internalID: 1453713589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bloodTroop_19: 1278904903
+      bloodTroop_21: -371210536
+      bloodTroop_24: 737932483
+      bloodTroop_38: -1862788165
+      bloodTroop_5: -1483855633
+      bloodTroop_0: 1645694060
+      bloodTroop_18: 1112754931
+      bloodTroop_6: 2058928910
+      bloodTroop_15: -1227720742
+      bloodTroop_29: -321292729
+      bloodTroop_42: -46982155
+      bloodTroop_7: -1114462462
+      bloodTroop_33: 1190125369
+      bloodTroop_9: 1512362873
+      bloodTroop_17: 1647419661
+      bloodTroop_11: 396082570
+      bloodTroop_35: -1661770450
+      bloodTroop_31: 1502653315
+      bloodTroop_34: 1547053173
+      bloodTroop_20: -2145585537
+      bloodTroop_23: 1965195808
+      bloodTroop_40: -1903989190
+      bloodTroop_39: 1463316420
+      bloodTroop_1: -62325224
+      bloodTroop_36: -315230268
+      bloodTroop_25: 635751
+      bloodTroop_32: 1278740146
+      bloodTroop_8: 328936888
+      bloodTroop_3: 141783877
+      bloodTroop_27: 1150017351
+      bloodTroop_16: -728149688
+      bloodTroop_30: 1139723922
+      bloodTroop_26: -1907579381
+      bloodTroop_41: -1984819186
+      bloodTroop_43: 190429395
+      bloodTroop_13: -1913978621
+      bloodTroop_14: 160874489
+      bloodTroop_22: -1286771496
+      bloodTroop_2: 332021110
+      bloodTroop_4: -723692356
+      bloodTroop_37: -1887200386
+      bloodTroop_28: -1640025381
+      bloodTroop_44: 1453713589
+      bloodTroop_10: 2093913212
+      bloodTroop_12: -677186075
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

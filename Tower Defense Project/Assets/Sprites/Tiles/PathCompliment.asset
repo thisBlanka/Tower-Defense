@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: PathCompliment
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 88a629b35ac738d41bfc725fdf371072, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ead58eeb3e26fe45a68aa3e51327a14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

@@ -10,6 +10,8 @@ public class Projectile : MonoBehaviour
     private GameObject target;
     [SerializeField] private float fix;
     [SerializeField] private int damage;
+    [SerializeField] private bool hasDeathAnimation, hasLight;
+    private bool dead;
 
     public void Create(Vector3 spawnPosition, Vector3 targetPosition, GameObject target)
     {
@@ -42,30 +44,46 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (target.gameObject != null)
-        {
-            targetPosition = target.transform.position;
-        }
-
-        Vector3 moveDir = (targetPosition - transform.position).normalized;
-        float speed = 4f;
-
-        transform.position += moveDir * speed * Time.deltaTime;
-
-        float angle = angleFix(moveDir);
-        transform.eulerAngles = new Vector3(0, 0, angle - fix);
-
-        float destroySelfDistance = 0.2f;
-        if (Vector3.Distance(transform.position, targetPosition) < destroySelfDistance)
+        if (!dead)
         {
             if (target.gameObject != null)
             {
-                enemyLife = target.GetComponent<EnemyLife>();
-                enemyLife.setEnemyLife(enemyLife.getEnemyLife() - damage);
+                targetPosition = target.transform.position;
             }
-            Destroy(this.gameObject);
+
+            Vector3 moveDir = (targetPosition - transform.position).normalized;
+            float speed = 4f;
+
+            transform.position += moveDir * speed * Time.deltaTime;
+
+            float angle = angleFix(moveDir);
+            transform.eulerAngles = new Vector3(0, 0, angle - fix);
+
+            float destroySelfDistance = 0.2f;
+            if (Vector3.Distance(transform.position, targetPosition) < destroySelfDistance)
+            {
+                if (target.gameObject != null)
+                {
+                    enemyLife = target.GetComponent<EnemyLife>();
+                    enemyLife.setEnemyLife(enemyLife.getEnemyLife() - damage);
+                }
+
+                if (hasLight)
+                {
+                    GameObject light = transform.GetChild(0).gameObject;
+                    light.SetActive(false);
+                }
+
+                if (hasDeathAnimation)
+                {
+                    dead = true;
+                    Animator anim = this.GetComponent<Animator>();
+                    anim.SetTrigger("Death");
+
+                }
+                else
+                    Destroy(this.gameObject);
+            }
         }
-        
     }
 }

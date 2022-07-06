@@ -23,10 +23,10 @@ public class EnemyMove : MonoBehaviour
         spawnPlace = GameObject.Find("Enemies").GetComponent<EnemySpawn>();
         if(spawnPlace.getSpawnPlace() == 1)
         {
-            spawn = transform.position.y - 2f;
+            spawn = transform.position.y - 1f;
         }else if (spawnPlace.getSpawnPlace() == 2)
         {
-            spawn = transform.position.y + 2f;
+            spawn = transform.position.y + 1f;
         }
         life = GetComponent<EnemyLife>();
         moveEnable = true;
@@ -35,7 +35,6 @@ public class EnemyMove : MonoBehaviour
         fixing = false;
         route_case = 1;
         fix_case = 0;
-        speed = 1f;
         anim = GetComponent<Animator>();
         speedHorizontal = -speed;
         speedVertical = 0;

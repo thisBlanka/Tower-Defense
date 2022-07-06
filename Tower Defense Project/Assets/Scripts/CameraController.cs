@@ -27,8 +27,8 @@ public class CameraController : MonoBehaviour
             {
                 Camera.main.transform.position = origin - difference;
                 Camera.main.transform.position = new Vector3(
-                Mathf.Clamp(Camera.main.transform.position.x, -5, 5),
-                Mathf.Clamp(Camera.main.transform.position.y, -3, 3), transform.position.z);
+                Mathf.Clamp(Camera.main.transform.position.x, -5.5f, 5.5f),
+                Mathf.Clamp(Camera.main.transform.position.y, -4, 4f), transform.position.z);
             }
         }
     }

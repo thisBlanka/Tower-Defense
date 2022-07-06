@@ -5,7 +5,13 @@ using UnityEngine;
 public class TroopLife : MonoBehaviour
 {
 
+    private bool isShaking;
+
+    [SerializeField] float shakeAmount;
+
     public int life, prevLife, lifeCondition;
+
+    private Vector3 originalPos;
 
     public Material flash;
 
@@ -41,7 +47,6 @@ public class TroopLife : MonoBehaviour
         coll = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         original = spriteRenderer.material;
-        life = 10;
         lifeCondition = life;
         prevLife = life;
         color = original.color;
@@ -53,6 +58,7 @@ public class TroopLife : MonoBehaviour
     {
         if (prevLife > life)
         {
+            ShakeMe();
             Flash();
             color.r = color.r - .07f * (prevLife - life);
             color.g = color.g - .07f * (prevLife - life);
@@ -74,6 +80,14 @@ public class TroopLife : MonoBehaviour
                 Instantiate(bloodPermanent, this.transform);
                 bloodSound.Play();
             }
+        }
+
+        if (isShaking)
+        {
+            Vector3 newPos = transform.position + Random.insideUnitSphere * (Time.deltaTime * shakeAmount);
+            newPos.y = transform.position.y;
+            newPos.z = transform.position.z;
+            transform.position = newPos;
         }
     }
 
@@ -97,6 +111,35 @@ public class TroopLife : MonoBehaviour
             StopCoroutine(flashRoutine);
         }
         flashRoutine = StartCoroutine(FlashRoutine());
+    }
+
+    public void ShakeMe()
+    {
+        StartCoroutine("ShakeNow");
+    }
+
+    IEnumerator ShakeNow()
+    {
+        originalPos = transform.position;
+        if (isShaking == false)
+        {
+            isShaking = true;
+        }
+        yield return new WaitForSeconds(0.1f);
+        isShaking = false;
+        TroopMovement move = GetComponent<TroopMovement>();
+        if (move.getSpeedHorizontal() != 0)
+        {
+            transform.position = new Vector3(transform.position.x, originalPos.y, originalPos.z);
+        }
+        else
+        {
+            transform.position = new Vector3(originalPos.x, transform.position.y, originalPos.z);
+        }
+        if (!move.getMoveEnable())
+        {
+            transform.position = originalPos;
+        }
     }
 
     public int getTroopLife()

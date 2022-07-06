@@ -27,11 +27,11 @@ public class TroopMovement : MonoBehaviour
         spawnPlace = FindObjectOfType<InstantiateTroop>();
         if (spawnPlace.getSpawnPlace() == 1)
         {
-            spawn = transform.position.y - 2f;
+            spawn = transform.position.y - 3f;
         }
         else if (spawnPlace.getSpawnPlace() == 2)
         {
-            spawn = transform.position.y + 2f;
+            spawn = transform.position.y + 3f;
         }
         troopSize = 0.4375f;
         routeFix = false;

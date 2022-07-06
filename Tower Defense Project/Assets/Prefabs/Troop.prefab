@@ -433,7 +433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d054963834f968144863d92e029d942c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 0
+  shakeAmount: 3
+  life: 10
   prevLife: 0
   lifeCondition: 0
   flash: {fileID: 2100000, guid: b11e9b500793e954d85ece0f9719e246, type: 2}

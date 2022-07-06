@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
+    private bool isShaking;
+
+    [SerializeField] float shakeAmount;
+
+    Vector3 originalPos;
+
     public EnemyFront inFront;
     public int life, prevLife, lifeCondition;
 
@@ -34,10 +40,10 @@ public class EnemyLife : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        originalPos = transform.position;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         original = spriteRenderer.material;
-        life = 10;
         lifeCondition = life;
         prevLife = life;
         color = original.color;
@@ -51,6 +57,7 @@ public class EnemyLife : MonoBehaviour
     {
         if (prevLife > life)
         {
+            ShakeMe();
             Flash();
             color.r = color.r - .07f * (prevLife - life);
             color.g = color.g - .07f * (prevLife - life);
@@ -71,6 +78,13 @@ public class EnemyLife : MonoBehaviour
                 coll.enabled = false;
                 animator.SetTrigger("Death");
             }
+        }
+        if (isShaking)
+        {
+            Vector3 newPos = transform.position + Random.insideUnitSphere * (Time.deltaTime * shakeAmount);
+            newPos.y = transform.position.y;
+            newPos.z = transform.position.z;
+            transform.position = newPos;
         }
     }
 
@@ -94,6 +108,31 @@ public class EnemyLife : MonoBehaviour
             StopCoroutine(flashRoutine);
         }
         flashRoutine = StartCoroutine(FlashRoutine());
+    }
+
+    public void ShakeMe()
+    {
+        StartCoroutine("ShakeNow");
+    }
+
+    IEnumerator ShakeNow()
+    {
+        originalPos = transform.position;
+        if (isShaking == false)
+        {
+            isShaking = true;
+        }
+        yield return new WaitForSeconds(0.1f);
+        isShaking = false;
+        EnemyMove move = GetComponent<EnemyMove>();
+        if(move.getSpeedHorizontal() != 0)
+        {
+            transform.position = new Vector3(transform.position.x, originalPos.y, originalPos.z);
+        }
+        else
+        {
+            transform.position = new Vector3(originalPos.x, transform.position.y, originalPos.z);
+        }
     }
 
     public int getEnemyLife()

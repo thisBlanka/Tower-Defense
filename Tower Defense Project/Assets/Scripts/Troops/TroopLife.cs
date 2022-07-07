@@ -31,6 +31,8 @@ public class TroopLife : MonoBehaviour
 
     private Animator animator;
 
+    private float lifePercentage, prevLifePercentage;
+
     [SerializeField]
     private GameObject bloodSplash;
     [SerializeField]
@@ -42,6 +44,9 @@ public class TroopLife : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        lifePercentage = 100;
+        prevLifePercentage = 100;
         animator = GetComponent<Animator>();
         isDead = false;
         coll = GetComponent<Collider2D>();
@@ -58,13 +63,15 @@ public class TroopLife : MonoBehaviour
     {
         if (prevLife > life)
         {
+            lifePercentage = (lifePercentage * life) / prevLife;
             ShakeMe();
             Flash();
-            color.r = color.r - .07f * (prevLife - life);
-            color.g = color.g - .07f * (prevLife - life);
-            color.b = color.b - .07f * (prevLife - life);
+            color.r = color.r - 0.07f * (prevLifePercentage - lifePercentage) / 10;
+            color.g = color.g - 0.07f * (prevLifePercentage - lifePercentage) / 10;
+            color.b = color.b - 0.07f * (prevLifePercentage - lifePercentage) / 10;
             original.color = color;
             prevLife = life;
+            prevLifePercentage = lifePercentage;
         }
 
         if (life <= 0)

@@ -29,6 +29,8 @@ public class EnemyLife : MonoBehaviour
     private bool isDead;
     private Collider2D coll;
 
+    private float lifePercentage, prevLifePercentage;
+
     [SerializeField]
     private GameObject bloodSplash;
     [SerializeField]
@@ -40,6 +42,8 @@ public class EnemyLife : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lifePercentage = 100;
+        prevLifePercentage = 100;
         originalPos = transform.position;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -57,13 +61,15 @@ public class EnemyLife : MonoBehaviour
     {
         if (prevLife > life)
         {
+            lifePercentage = (lifePercentage * life) / prevLife;
             ShakeMe();
             Flash();
-            color.r = color.r - .07f * (prevLife - life);
-            color.g = color.g - .07f * (prevLife - life);
-            color.b = color.b - .07f * (prevLife - life);
+            color.r = color.r - 0.07f * (prevLifePercentage - lifePercentage)/ 10;
+            color.g = color.g - 0.07f * (prevLifePercentage - lifePercentage)/ 10;
+            color.b = color.b - 0.07f * (prevLifePercentage - lifePercentage)/ 10;
             original.color = color;
             prevLife = life;
+            prevLifePercentage = lifePercentage;
         }
         if (life <= 0)
         {

@@ -10,6 +10,7 @@ public class RangedFront : MonoBehaviour
     static bool sampleRangeGone;
     [SerializeField] private GameObject sampleTroop;
 
+
     private void Start()
     {
         sampleRangeGone = false;

@@ -16,6 +16,10 @@ public class TroopAttack : MonoBehaviour
     private TroopLife life;
     [SerializeField] private AudioSource stab;
     private Collider2D mainTower;
+
+    [SerializeField] float damage;
+    [SerializeField] float coolDown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +28,6 @@ public class TroopAttack : MonoBehaviour
         coll = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
         move = GetComponent<TroopMovement>();
-        cooldown = 0.5f;
         targets = new List<GameObject>();
     }
 
@@ -35,45 +38,15 @@ public class TroopAttack : MonoBehaviour
         {
             if (this.coll.IsTouching(mainTower))
             {
+                inRoute = false;
                 move.setMoveEnable(false);
+                DealDamage(mainTower.gameObject);
             }
             else if (targets.Count > 0)
             {
                 inRoute = false;
                 move.setMoveEnable(false);
-
-                if (cooldown <= 0)
-                {
-                    stab.Play();
-                    enemylife = targets[0].GetComponent<EnemyLife>();
-                    enemylife.setEnemyLife(enemylife.getEnemyLife() - 1);
-
-                    cooldown = 0.5f;
-
-                    if (move.getSpeedHorizontal() > 0)
-                    {
-                        anim.SetTrigger("AttackForward");
-                        transform.localScale = new Vector3(1, 1, 1);
-                    }
-                    else if (move.getSpeedHorizontal() < 0)
-                    {
-                        anim.SetTrigger("AttackForward");
-                        transform.localScale = new Vector3(-1,1, 1);
-                    }
-                    else if (move.getSpeedVertical() > 0)
-                    {
-                        anim.SetTrigger("AttackUp");
-                    }
-                    else if (move.getSpeedVertical() < 0)
-                    {
-                        anim.SetTrigger("AttackDown");
-                    }
-                }
-                else
-                {
-                    cooldown -= Time.deltaTime;
-                }
-
+                DealDamage(targets[0].gameObject);
             }
             else
             {
@@ -101,6 +74,41 @@ public class TroopAttack : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    private void DealDamage(GameObject target)
+    {
+        if (cooldown <= 0)
+        {
+            stab.Play();
+            enemylife = targets[0].GetComponent<EnemyLife>();
+            enemylife.setEnemyLife(enemylife.getEnemyLife() - 1);
+
+            cooldown = 0.5f;
+
+            if (move.getSpeedHorizontal() > 0)
+            {
+                anim.SetTrigger("AttackForward");
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (move.getSpeedHorizontal() < 0)
+            {
+                anim.SetTrigger("AttackForward");
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else if (move.getSpeedVertical() > 0)
+            {
+                anim.SetTrigger("AttackUp");
+            }
+            else if (move.getSpeedVertical() < 0)
+            {
+                anim.SetTrigger("AttackDown");
+            }
+        }
+        else
+        {
+            cooldown -= Time.deltaTime;
         }
     }
 

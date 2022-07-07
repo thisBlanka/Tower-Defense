@@ -7,10 +7,12 @@ public class SampleTroop : MonoBehaviour
     private Vector2 mousePosition;
     private Buy isBuying;
     private CanPlaceCharacter canPlace;
+    private CanPlaceCharacter canPlace2;
     // Start is called before the first frame update
     void Start()
     {
         canPlace = GameObject.Find("CanPlaceCharacter").GetComponent<CanPlaceCharacter>();
+        canPlace2 = GameObject.Find("CanPlaceCharacter2").GetComponent<CanPlaceCharacter>();
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
@@ -22,6 +24,7 @@ public class SampleTroop : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             canPlace.setIsBuying(false);
+            canPlace2.setIsBuying(false);
             Destroy(gameObject);
         }
     }

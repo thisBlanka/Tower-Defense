@@ -43,7 +43,7 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!life.getIsDead())
+        if (!life.getIsDead() && moveEnable)
         {
             if (moveEnable)
             {

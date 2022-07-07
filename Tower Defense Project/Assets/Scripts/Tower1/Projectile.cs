@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
     private GameObject target;
     [SerializeField] private float fix;
     [SerializeField] private int damage;
-    [SerializeField] private bool hasDeathAnimation, hasLight;
+    [SerializeField] private bool hasDeathAnimation, hasLight, hasHitSound;
     private bool dead;
 
     public void Create(Vector3 spawnPosition, Vector3 targetPosition, GameObject target)
@@ -72,6 +72,13 @@ public class Projectile : MonoBehaviour
                 {
                     GameObject light = transform.GetChild(0).gameObject;
                     light.SetActive(false);
+                }
+
+                if (hasHitSound)
+                {
+                    GameObject sound = transform.GetChild(1).gameObject;
+                    AudioSource soundSource = sound.GetComponent<AudioSource>();
+                    soundSource.Play();
                 }
 
                 if (hasDeathAnimation)

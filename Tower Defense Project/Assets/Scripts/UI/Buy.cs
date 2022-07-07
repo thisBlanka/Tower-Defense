@@ -9,11 +9,12 @@ public class Buy : MonoBehaviour
     [SerializeField] private GameObject actionBar;
     private Vector2 spawnPos;
     [SerializeField] private SpriteRenderer troopSample;
-    private CanPlaceCharacter canPlace;
+    private CanPlaceCharacter canPlace, canPlace2;
 
     public void Start()
     {
         canPlace = GameObject.Find("CanPlaceCharacter").GetComponent<CanPlaceCharacter>();
+        canPlace2 = GameObject.Find("CanPlaceCharacter2").GetComponent<CanPlaceCharacter>();
         //anim = actionBar.GetComponent<Animator>();
     }
     public void SpawnTroop()
@@ -22,6 +23,7 @@ public class Buy : MonoBehaviour
         if(!canPlace.getIsBuying())
             Instantiate(troopSample, spawnPos, Quaternion.identity);
         canPlace.setIsBuying(true);
+        canPlace2.setIsBuying(true);
     }
 
 }

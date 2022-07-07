@@ -16,6 +16,11 @@ public class EnemyAttack : MonoBehaviour
     TroopLife trooplife;
     private List<GameObject> targets;
 
+    [SerializeField] float damage;
+    [SerializeField] float coolDown;
+
+    [SerializeField] private AudioSource attackSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +29,6 @@ public class EnemyAttack : MonoBehaviour
         mainTowerColl = GameObject.Find("PlayerTower").GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
         move = GetComponent<EnemyMove>();
-        cooldown = 0.5f;
         targets = new List<GameObject>();
     }
 
@@ -36,42 +40,15 @@ public class EnemyAttack : MonoBehaviour
 
             if (this.coll.IsTouching(mainTowerColl))
             {
+                inRoute = false;
                 move.setMoveEnable(false);
+                DealDamage(mainTowerColl.gameObject);
             }
             else if (targets.Count > 0)
             {
                 inRoute = false;
                 move.setMoveEnable(false);
-                if (cooldown <= 0)
-                {
-                    trooplife = targets[0].GetComponent<TroopLife>();
-                    trooplife.setTroopLife(trooplife.getTroopLife() - 1);
-                    cooldown = 0.5f;
-                    if (move.getSpeedHorizontal() > 0)
-                    {
-                        anim.SetTrigger("AttackForward");
-                        transform.localScale = new Vector3(1, 1, 1);
-                    }
-                    else if (move.getSpeedHorizontal() < 0)
-                    {
-                        anim.SetTrigger("AttackForward");
-                        transform.localScale = new Vector3(-1, 1, 1);
-                    }
-                    else if (move.getSpeedVertical() > 0)
-                    {
-                        transform.localScale = new Vector3(1, 1, 1);
-                        anim.SetTrigger("AttackUP");
-                    }
-                    else if (move.getSpeedVertical() < 0)
-                    {
-                        transform.localScale = new Vector3(1, 1, 1);
-                        anim.SetTrigger("AttackDown");
-                    }
-                }
-                else
-                {
-                    cooldown -= Time.deltaTime;
-                }
+                DealDamage(targets[0].gameObject);
             }
             else 
             {
@@ -103,6 +80,49 @@ public class EnemyAttack : MonoBehaviour
                 }
             }
         } 
+    }
+
+    private void DealDamage(GameObject target)
+    {
+        if (cooldown <= 0)
+        {
+            if (target.CompareTag("MainTower"))
+            {
+                TowerLife towerLife = mainTowerColl.GetComponent<TowerLife>();
+                towerLife.setTowerLife(towerLife.getTowerLife() - 1);
+            }else if (target.CompareTag("Troop"))
+            {
+                trooplife = target.GetComponent<TroopLife>();
+                trooplife.setTroopLife(trooplife.getTroopLife() - 1);
+            }
+
+            attackSound.Play();
+            cooldown = 0.5f;
+            if (move.getSpeedHorizontal() > 0)
+            {
+                anim.SetTrigger("AttackForward");
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (move.getSpeedHorizontal() < 0)
+            {
+                anim.SetTrigger("AttackForward");
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else if (move.getSpeedVertical() > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                anim.SetTrigger("AttackUP");
+            }
+            else if (move.getSpeedVertical() < 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                anim.SetTrigger("AttackDown");
+            }
+        }
+        else
+        {
+            cooldown -= Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

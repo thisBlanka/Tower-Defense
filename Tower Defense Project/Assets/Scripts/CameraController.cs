@@ -10,17 +10,19 @@ public class CameraController : MonoBehaviour
     private Vector2 resetCamera;
     private bool isDragging;
     private CanPlaceCharacter isBuying;
+    private PlaceTowerHandler isBuying2;
     // Start is called before the first frame update
     void Start()
     {
         isBuying = GameObject.Find("CanPlaceCharacter").GetComponent<CanPlaceCharacter>();
+        isBuying2 = GameObject.Find("CanPlaceTower").GetComponent<PlaceTowerHandler>();
         resetCamera = Camera.main.transform.position;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (!isBuying.getIsBuying())
+        if (!isBuying.getIsBuying() && !isBuying2.getIsBuying())
         {
             handleMousePosition();
             if (isDragging)

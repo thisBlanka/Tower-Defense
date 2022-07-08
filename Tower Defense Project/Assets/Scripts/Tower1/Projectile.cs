@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private GameObject projectiles;
     private Vector3 targetPosition;
     private EnemyLife enemyLife;
+    private TowerLife towerLife;
     private GameObject target;
     [SerializeField] private float fix;
     [SerializeField] private int damage;
@@ -62,10 +63,14 @@ public class Projectile : MonoBehaviour
             float destroySelfDistance = 0.2f;
             if (Vector3.Distance(transform.position, targetPosition) < destroySelfDistance)
             {
-                if (target.gameObject != null)
+                if (target.gameObject != null && target.gameObject.CompareTag("Enemy"))
                 {
                     enemyLife = target.GetComponent<EnemyLife>();
                     enemyLife.setEnemyLife(enemyLife.getEnemyLife() - damage);
+                }else if(target.gameObject != null && target.gameObject.CompareTag("MainTower") || target.gameObject != null && target.gameObject.CompareTag("EnemyTower"))
+                {
+                    towerLife = target.GetComponent<TowerLife>();
+                    towerLife.setTowerLife(towerLife.getTowerLife() - damage);
                 }
 
                 if (hasLight)

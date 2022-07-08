@@ -7,7 +7,7 @@ public class TowerDrag : MonoBehaviour
     private BuyTower drag;
     private BuyTower canShoot;
     [SerializeField] SpriteRenderer showRange;
-    private CanPlaceCharacter canPlace;
+    private PlaceTowerHandler canPlace;
 
     bool placed;
 
@@ -21,7 +21,7 @@ public class TowerDrag : MonoBehaviour
         {
             drag = GameObject.Find("Tower2").GetComponent<BuyTower>();
         }
-        canPlace = GameObject.Find("CanPlaceCharacter").GetComponent<CanPlaceCharacter>();
+        canPlace = GameObject.Find("CanPlaceTower").GetComponent<PlaceTowerHandler>();
         placed = false;
     }
 
@@ -35,9 +35,9 @@ public class TowerDrag : MonoBehaviour
         }
         else
         {
+            canPlace.setIsBuying(false);
             if (!placed && showRange.tag != "RangeStatic")
             {
-                canPlace.setIsBuying(false);
                 showRange.enabled = false;
             }
             placed = true;

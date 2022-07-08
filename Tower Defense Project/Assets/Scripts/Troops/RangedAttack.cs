@@ -37,40 +37,15 @@ public class RangedAttack : MonoBehaviour
         {
             if (this.coll.IsTouching(mainTower))
             {
+                inRoute = false;
                 move.setMoveEnable(false);
+                DealDamage(mainTower.gameObject);
             }
             else if (targets.Count > 0)
             {
                 inRoute = false; ;
                 move.setMoveEnable(false);
-                if (cooldown <= 0)
-                {
-                    arrow.Play();
-                    projectile.Create(transform.position, targets[0].transform.position, targets[0]);
-                    cooldown = 2f;
-                    cooldown = cooldownTime;
-
-                    if (move.route_case == 0)
-                    {
-                        anim.SetTrigger("AttackForward");
-                    }
-                    else if (move.route_case == 1)
-                    {
-                        anim.SetTrigger("AttackBackwards");
-                    }
-                    else if (move.route_case == 2)
-                    {
-                        anim.SetTrigger("AttackUp");
-                    }
-                    else if (move.route_case == 3)
-                    {
-                        anim.SetTrigger("AttackDown");
-                    }
-                }
-                else
-                {
-                    cooldown -= Time.deltaTime;
-                }
+                DealDamage(targets[0].gameObject);
             }
             else
             {
@@ -97,6 +72,38 @@ public class RangedAttack : MonoBehaviour
                 }
 
             }
+        }
+    }
+
+    private void DealDamage(GameObject target)
+    {
+        if (cooldown <= 0)
+        {
+            arrow.Play();
+            projectile.Create(transform.position, target.transform.position, target);
+            cooldown = 2f;
+            cooldown = cooldownTime;
+
+            if (move.route_case == 0)
+            {
+                anim.SetTrigger("AttackForward");
+            }
+            else if (move.route_case == 1)
+            {
+                anim.SetTrigger("AttackBackwards");
+            }
+            else if (move.route_case == 2)
+            {
+                anim.SetTrigger("AttackUp");
+            }
+            else if (move.route_case == 3)
+            {
+                anim.SetTrigger("AttackDown");
+            }
+        }
+        else
+        {
+            cooldown -= Time.deltaTime;
         }
     }
 

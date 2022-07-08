@@ -13,34 +13,34 @@ public class EnemySpawn : MonoBehaviour
     void Start()
     {
         spawnPlace = 1;
-        auxiliarTime = Time.time;
-        auxiliarTime2 = Time.time;
-        cooldown = 10;
-        cdr = 0;
+        auxiliarTime = 0;
+        auxiliarTime2 = 0;
+        cooldown = 0;
+        cdr = 10;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         cooldown += Time.deltaTime;
-        if(cooldown > 10)
+        if(cooldown > cdr)
         {
             spawnTime += Time.deltaTime;
             if (spawnTime > auxiliarTime)
             {
                 if(spawnPlace == 1) //2.78 - 1.22
-                    Instantiate(enemy, new Vector2(spawnTransform.position.x, spawnTransform.position.y - Random.Range(-.78f, .78f)), Quaternion.identity);
+                    Instantiate(enemy, new Vector2(spawnTransform.position.x, spawnTransform.position.y - Random.Range(-.70f, .70f)), Quaternion.identity);
                 else if (spawnPlace == 2)
-                    Instantiate(enemy, new Vector2(spawnTransform2.position.x, spawnTransform2.position.y - Random.Range(-.78f, .78f)), Quaternion.identity);
+                    Instantiate(enemy, new Vector2(spawnTransform2.position.x, spawnTransform2.position.y - Random.Range(-.70f, .70f)), Quaternion.identity);
                 auxiliarTime = spawnTime + .2f;
             }
 
             if (spawnTime > auxiliarTime2)
             {
                 if (spawnPlace == 1) //2.78 - 1.22
-                    Instantiate(monster1, new Vector2(spawnTransform.position.x, spawnTransform.position.y - Random.Range(-.78f, .78f)), Quaternion.identity);
+                    Instantiate(monster1, new Vector2(spawnTransform.position.x, spawnTransform.position.y - Random.Range(-.70f, .70f)), Quaternion.identity);
                 else if (spawnPlace == 2)
-                    Instantiate(monster1, new Vector2(spawnTransform2.position.x, spawnTransform2.position.y - Random.Range(-.78f, .78f)), Quaternion.identity);
+                    Instantiate(monster1, new Vector2(spawnTransform2.position.x, spawnTransform2.position.y - Random.Range(-.70f, .70f)), Quaternion.identity);
                 auxiliarTime2 = spawnTime + .1f;
             }
 
@@ -54,8 +54,9 @@ public class EnemySpawn : MonoBehaviour
                 {
                     spawnPlace = 1;
                 }
-                cdr += 0.1f;
-                cooldown = cdr;
+                if(cdr > 1) 
+                    cdr -= 0.25f;
+                cooldown = 0;
                 spawnTime = 0;
                 auxiliarTime = 0;
                 auxiliarTime2 = 0;

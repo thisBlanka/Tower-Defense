@@ -35,6 +35,7 @@ public class TowerAreaDMG : MonoBehaviour
 
         if (inRange.getSize() > 0 && ableToShoot)
         {
+            spriteRenderer.gameObject.SetActive(true);
             spriteRenderer.enabled = true;
             if (coolDown <= 0)
             {
@@ -55,7 +56,7 @@ public class TowerAreaDMG : MonoBehaviour
         }
         else
         {
-            isShooting =false;
+            isShooting = false;
             //shootSound.Stop();
         }
 

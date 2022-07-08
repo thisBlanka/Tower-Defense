@@ -12,6 +12,7 @@ public class TroopAttack : MonoBehaviour
     bool inBattle;
     public GameObject target;
     private EnemyLife enemylife;
+    private TowerLife towerLife;
     private List<GameObject> targets;
     private TroopLife life;
     [SerializeField] private AudioSource stab;
@@ -82,8 +83,14 @@ public class TroopAttack : MonoBehaviour
         if (cooldown <= 0)
         {
             stab.Play();
-            enemylife = targets[0].GetComponent<EnemyLife>();
-            enemylife.setEnemyLife(enemylife.getEnemyLife() - 1);
+            if (target.CompareTag("Enemy")) {
+                enemylife = target.GetComponent<EnemyLife>();
+                enemylife.setEnemyLife(enemylife.getEnemyLife() - 1);
+            }else if (target.CompareTag("EnemyTower"))
+            {
+                towerLife = target.GetComponent<TowerLife>();
+                towerLife.setTowerLife(towerLife.getTowerLife() - 1);
+            }
 
             cooldown = 0.5f;
 

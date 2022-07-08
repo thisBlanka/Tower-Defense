@@ -286,6 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b496d262216614db69b2c5fca018a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinValue: 1
   shakeAmount: 5
   inFront: {fileID: 0}
   life: 5

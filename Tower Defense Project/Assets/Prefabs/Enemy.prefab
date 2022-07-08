@@ -435,6 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b496d262216614db69b2c5fca018a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinValue: 3
   shakeAmount: 3
   inFront: {fileID: 5470799299914798298, guid: df66c230f7eefb94fa55402ef6402e6c, type: 3}
   life: 10

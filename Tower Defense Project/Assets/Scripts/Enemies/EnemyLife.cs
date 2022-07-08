@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
+    private CoinManager coinManager;
+    [SerializeField]
+    private float coinValue;
+
     private bool isShaking;
 
     [SerializeField] float shakeAmount;
@@ -42,6 +46,7 @@ public class EnemyLife : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        coinManager = GameObject.Find("CoinManager").GetComponent<CoinManager>();
         lifePercentage = 100;
         prevLifePercentage = 100;
         originalPos = transform.position;
@@ -77,6 +82,7 @@ public class EnemyLife : MonoBehaviour
             original.color = color;
             if (!isDead)
             {
+                coinManager.setCoin(coinManager.getCoin() + coinValue);
                 Instantiate(bloodSplash, this.transform);
                 Instantiate(bloodPermanent, this.transform);
                 bloodSound.Play();

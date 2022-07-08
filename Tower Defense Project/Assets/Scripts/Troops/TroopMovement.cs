@@ -32,32 +32,50 @@ public class TroopMovement : MonoBehaviour
         speedVertical = 0;
         if (spawnPlace.getSpawnPlace() == 1)
         {
+            specialCase1 = false;
+            specialCase2 = false;
+            speedHorizontal = +speed;
+            speedVertical = 0;
             spawn = transform.position.y - 3f;
         }
         else if (spawnPlace.getSpawnPlace() == 2)
         {
+            specialCase1 = false;
+            specialCase2 = false;
+            speedHorizontal = +speed;
+            speedVertical = 0;
             spawn = transform.position.y + 3f;
         }
         if (spawnPlace.getSpawnPlace() == 3)
         {
             spawn = transform.position.x + 12f;
             specialCase1 = true;
+            specialCase2 = false;
             speedVertical = +speed;
             speedHorizontal = 0;
         }
         else if (spawnPlace.getSpawnPlace() == 4)
         {
             spawn = transform.position.x + 12f;
+            specialCase1 = false;
             specialCase2 = true;
             speedVertical = -speed;
             speedHorizontal= 0;
         }
         if (spawnPlace.getSpawnPlace() == 5)
         {
+            specialCase1 = false;
+            specialCase2 = false;
+            speedHorizontal = +speed;
+            speedVertical = 0;
             spawn = transform.position.y - 1f;
         }
         else if (spawnPlace.getSpawnPlace() == 6)
         {
+            specialCase1 = false;
+            specialCase2 = false;
+            speedHorizontal = +speed;
+            speedVertical = 0;
             spawn = transform.position.y + 1f;
         }
         routeFix = false;

@@ -14,6 +14,7 @@ TagManager:
   - Tower2
   - RangeStatic
   - EnemyTower
+  - CanPlaceTower
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - RangeStatic
   - Enemy
   - Troop
-  - 
+  - CanPlaceTower
   - 
   - 
   - 

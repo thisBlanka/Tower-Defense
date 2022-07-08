@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TowerLife : MonoBehaviour
 {
@@ -29,6 +30,13 @@ public class TowerLife : MonoBehaviour
         {
             isDead = true;
             anim.SetTrigger("Death");
+            if (this.gameObject.CompareTag("MainTower"))
+            {
+                SceneManager.LoadScene("DefeatScreen");
+            }else if (this.gameObject.CompareTag("EnemyTower"))
+            {
+                SceneManager.LoadScene("VictoryScreen");
+            }   
         }
 
     }
